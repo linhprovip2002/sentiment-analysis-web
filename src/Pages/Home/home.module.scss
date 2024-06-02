@@ -1,0 +1,116 @@
+.wrap-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(248,248,248);
+    color: #555;
+    font-size: 20px;
+    font-weight: 600;
+    
+    // box-shadow: 0 2px 5px rgba(240, 231, 231, 0.5);
+}
+
+.container-home {
+    background-color: rgb(248,248,248);
+    color: #555;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    margin-top: 5px;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 65%;
+    height: 100vh;
+}
+.input_text-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.item-option {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px 20px; // Tăng padding cho mỗi mục
+    // background-color: #f0f0f0; // Màu nền của mỗi mục
+    border-radius: 5px; // Bo tròn các góc
+    cursor: pointer; // Chuyển con trỏ thành hình bàn tay khi di chuột qua
+    transition: background-color 0.3s ease; // Hiệu ứng chuyển đổi màu nền mềm mại
+}
+
+.input_text_aria-container{
+    width: 40%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+
+}
+.input_text_aria{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 600;
+    resize: none;
+}
+.input_option-container{
+    padding-top: 5px;
+    border-top: 2px solid rgb(60,141,188);
+}
+
+.history-convo {
+    margin-top: 20px;
+  }
+  
+  .history-convo-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Tùy chỉnh CSS cho mỗi Convo */
+  .history-convo-list .wrap-convo {
+    flex: 0 0 calc(50% - 10px); /* Phần tử con chiếm 50% chiều rộng, với khoảng cách giữa chúng là 20px */
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  /* Style cho tiêu đề "History sentiment Analysis" */
+  .history-convo > span {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  
+  .history-convo-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow: auto;
+    max-height: 400px;
+    flex-direction: column;
+}
+
+.button-detect {
+    padding: 10px 20px;
+    background-color: rgb(60, 141, 188);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Thêm hiệu ứng transition cho box-shadow */
+    /* Thêm box-shadow mặc định */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-detect:hover {
+    /* Tăng độ sáng và độ trong của box-shadow khi hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

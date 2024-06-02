@@ -1,0 +1,53 @@
+// convo.module.scss
+
+.wrap-convo {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.container-convo {
+    display: flex;
+    flex-direction: column;
+}
+
+.convo-content, .convo-valuation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.convo-content p, .convo-valuation p {
+    margin-right: 20px;
+    color: #555;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.convo-content span, .convo-valuation span {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.convo-valuation .tag {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.label-sentiment {
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.label-sentiment.negative {
+    background-color: #3498db; /* Màu xanh cho giá trị negative */
+}
+
+.label-sentiment.positive {
+    background-color: #e74c3c; /* Màu đỏ cho giá trị positive */
+}
