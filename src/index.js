@@ -4,13 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyles from "./GlobalStyles";
-
+import { ChakraProvider } from '@chakra-ui/react'
+import { FluentProvider, webLightTheme } from '@fluentui/react-components';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <GlobalStyles>
+     <FluentProvider theme={webLightTheme}>
+     <ChakraProvider>
+     <GlobalStyles>
       <App />
     </GlobalStyles>
+    </ChakraProvider>
+     </FluentProvider>
+
   </React.StrictMode>
 );
 

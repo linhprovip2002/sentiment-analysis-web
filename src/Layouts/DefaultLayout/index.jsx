@@ -8,11 +8,11 @@ const cx = classNames.bind(styles);
 function DefaultLayout() {
   return (
     <div>
-      <Header></Header>
+      {/* <Header></Header> */}
       <div className={cx("content")}>
         <Outlet />
       </div>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

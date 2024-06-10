@@ -4,14 +4,13 @@ import * as React from "react";
 import {
     Tag,
     TagLabel,
-    TagLeftIcon,
-    TagRightIcon,
-    TagCloseButton,
+    CircularProgress,
+    CircularProgressLabel
 } from '@chakra-ui/react';
 
 const cx = classNames.bind(style);
 
-function convo({ selectedText, selectedSentiment, accuracy }) {
+function Convo({ selectedText, selectedSentiment, accuracy }) {
     const isPositive = selectedSentiment === "positive";
 
     return (
@@ -23,17 +22,18 @@ function convo({ selectedText, selectedSentiment, accuracy }) {
                 </div>
                 <div className={cx("convo-valuation")}>
                     <p>Sentiment: </p>
-                    <Tag size="lg" variant="solid" colorScheme="teal">
+                    <Tag>
                         <TagLabel className={cx("label-sentiment", { "positive": isPositive, "negative": !isPositive })}>
                             {selectedSentiment}
                         </TagLabel>
                     </Tag>
-                    <span> {accuracy}</span>
+                    <CircularProgress value={accuracy} color='green.400'>
+                        <CircularProgressLabel>{accuracy}%</CircularProgressLabel>
+                    </CircularProgress>
                 </div>
             </div>
         </div>
     );
 }
 
-
-export default convo;
+export default Convo;

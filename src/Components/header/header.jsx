@@ -10,7 +10,7 @@ function Header() {
             <div className={cx("container-header")}>
                 {/*  menu items  */}
                 <div className={cx("Logo")}>
-                    <h1>Logo</h1>
+                    <img className={cx('image-logo')} src="images-removebg-preview.png" alt="" />
                 </div>
                 <div className={cx("header-content")}>
                     <ul className={cx("header-list")}>
